@@ -96,14 +96,14 @@ def match(u):
 
     Tn.append(T)
 
-  print(u)
+  print(u + 1)
   print("Distance:", min(Tn))
-  print("match:", Tn.index(min(Tn)))
+  print("match:", Tn.index(min(Tn)) + 1)
   print("")
 
   if not Tn.index(min(Tn)) == u:
-      print(u, ":", Tn[u])
-      print(Tn.index(min(Tn)), ":", Tn[Tn.index(min(Tn))])
+      print(u + 1, ":", Tn[u])
+      print(Tn.index(min(Tn)) + 1, ":", Tn[Tn.index(min(Tn))])
       print(sorted(Tn))
       print("")
 
